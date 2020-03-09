@@ -1,0 +1,44 @@
+.criminalsContainer,
+.officersContainer, 
+.convictionsContainer
+{
+  border: 1px solid var(--grey-100);
+  padding: 0em 1em;
+  margin-bottom: 1em;
+  background: hsl(0, 0%, 97%);
+}
+
+.criminalsContainer .flexbox,
+.officersContainer .flexbox,
+.convictionsContainer .flexbox
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.officersContainer {
+
+}
+
+.officersContainer h4 {
+
+}
+
+.officersContainer article {
+  margin: 0;
+  padding: 0;
+}
+
+.officersContainer article ul {
+  margin: 0;
+  padding: 0;
+}
+
+.officersContainer article ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+

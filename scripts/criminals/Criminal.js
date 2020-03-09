@@ -4,7 +4,7 @@ export const CriminalHtml = criminalObj => {
       <h5>${criminalObj.name}</h5>
       <table>
         <tr>
-          <td>Name:</td>
+          <td>Age:</td>
           <td>${criminalObj.age}</td>
         </tr>  
         <tr>

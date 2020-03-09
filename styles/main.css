@@ -1,6 +1,7 @@
 @import './nomalize.css';
 @import './colors.css';
 @import './panels.css';
+@import './grid.css';
 
 :root {
   margin: 0;
@@ -64,19 +65,7 @@ main {
   margin: 1em 0.5em;
 }
 
-.criminalsContainer {
-  border: 1px solid var(--grey-100);
-  padding: 0em 1em;
-  margin-bottom: 1em;
-  background: hsl(0, 0%, 97%);
-}
 
-.criminalsContainer .flexbox {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 .3em 0;
