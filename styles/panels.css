@@ -1,0 +1,58 @@
+
+.panel h4, 
+.panel h5 {
+  margin: 0 0 .5em;
+}
+
+.panel p {
+  color: var(--grey-400);
+  font-size: 0.83em;
+  font-weight: 100;
+  margin: 0;
+  line-height: 1.75;
+}
+
+.panel {
+  border: 1px solid var(--grey-100);
+  padding: 1em;
+  margin-bottom: 1em;
+  flex-basis: 24%;
+  margin: .5em .5em;
+  background: white;
+}
+
+.panel table {
+  width: 100%;
+}
+
+.panel td {
+  color: var(--grey-400);
+  font-size: 0.83em;
+  font-weight: 100;
+  margin: 0;
+  line-height: 1.75;
+}
+
+.panel td:first-of-type {
+  color: var(--grey-400);
+}
+
+
+@media (min-width: 1000px) {
+  .panel {
+    flex-basis: 19%;
+  }
+}
+
+@media (max-width: 700px) {
+  .panel {
+    flex-basis: 38%;
+  }
+}
+
+@media (max-width: 450px) {
+  .panel {
+    flex-basis: 100%;
+  }
+}
+
