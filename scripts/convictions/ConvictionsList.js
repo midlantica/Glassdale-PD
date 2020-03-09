@@ -1,9 +1,9 @@
 import { ConvictionHtml } from './Conviction.js'
-import { useConviction } from './ConvictionDataProvider.js'
+import { useConvictions } from './ConvictionProvider.js'
 
-const contentTarget = document.querySelector('.filter filters__incarceration')
+const contentTarget = document.querySelector('.convictionsContainer article')
 export const ConvictionList = () => {
-  const ConvictionItems = useConviction()
+  const ConvictionItems = useConvictions()
 
   for (const item of ConvictionItems) {
     contentTarget.innerHTML += ConvictionHtml(item)
