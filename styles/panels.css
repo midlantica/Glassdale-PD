@@ -1,7 +1,16 @@
-
-.panel h4, 
+.panel h4,
 .panel h5 {
-  margin: 0 0 .5em;
+  margin: .25em 0 .5em;
+}
+
+.panel {
+  border: 1px solid var(--grey-100);
+  padding: 0.75em 1em;
+  margin-bottom: 1em;
+  flex-basis: 24%;
+  margin: .25em .5em;
+  background: white;
+  border-radius: 3px;
 }
 
 .panel p {
@@ -10,15 +19,6 @@
   font-weight: 100;
   margin: 0;
   line-height: 1.75;
-}
-
-.panel {
-  border: 1px solid var(--grey-100);
-  padding: 1em;
-  margin-bottom: 1em;
-  flex-basis: 24%;
-  margin: .5em .5em;
-  background: white;
 }
 
 .panel table {
@@ -55,4 +55,3 @@
     flex-basis: 100%;
   }
 }
-
