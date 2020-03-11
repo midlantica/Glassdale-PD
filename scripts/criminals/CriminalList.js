@@ -1,7 +1,7 @@
 import { CriminalHtml } from "./Criminal.js"
 import { useCriminals } from "./CriminalProvider.js"
 
-const contentTarget = document.querySelector(".criminalsContainer .flexbox")
+const contentTarget = document.querySelector(".criminalsContainer .grid")
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("crimeChosen", event => {
