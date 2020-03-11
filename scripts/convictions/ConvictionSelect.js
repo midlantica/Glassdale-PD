@@ -2,6 +2,7 @@
  *   ConvictionSelect component that renders a select HTML element
  *   which lists all convictions in the Glassdale PD API
  */
+
 import { useConvictions } from './ConvictionProvider.js'
 
 // Get a reference to the DOM element where the <select> will be rendered
