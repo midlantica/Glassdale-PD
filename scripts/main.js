@@ -1,16 +1,13 @@
-import { getConvictions } from './convictions/ConvictionProvider.js'
-import { ConvictionSelect } from './convictions/ConvictionSelect.js'
-import { ConvictionList } from './convictions/ConvictionsList.js'
+import { getConvictions } from "./convictions/ConvictionProvider.js"
+import { ConvictionSelect } from "./convictions/ConvictionSelect.js"
+import { CriminalList } from "./criminals/CriminalList.js"
+import { getCriminals } from "./criminals/CriminalProvider.js"
 //
-import { getCriminals } from './criminals/CriminalProvider.js'
-import { CriminalList } from './criminals/CriminalsList.js'
-// 
-import { getOfficers } from './officers/OfficerProvider.js'
-import { OfficerList } from './officers/OfficersList.js'
+import { getOfficers } from "./officers/OfficerProvider.js"
+import { OfficerList } from "./officers/OfficersList.js"
 //
-getCriminals().then(() => CriminalList())
+getCriminals().then(CriminalList)
+
+// first get all convictions, THEN create the conviction dropdown
+getConvictions().then(ConvictionSelect)
 getOfficers().then(() => OfficerList())
-getConvictions().then(() => ConvictionList())
-getConvictions().then(() => ConvictionSelect())
-// 
-console.log("Glassdale PD main.js ✅")
