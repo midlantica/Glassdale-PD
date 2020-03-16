@@ -19,13 +19,7 @@
 .officersContainer .grid,
 .convictionsContainer .grid {
   display: grid;
-  /* grid-template-columns: repeat(4, minmax(230px, 1fr)); */
-  /* grid-auto-flow: row; */
   padding-bottom: 1em;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
 }
 
 @media (min-width: 570px) {
@@ -33,10 +27,6 @@
   .officersContainer .grid,
   .convictionsContainer .grid {
     grid-template-columns: repeat(2, minmax(230px, 1fr));
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
   }
 }
 
@@ -57,10 +47,6 @@
   .officersContainer .grid,
   .convictionsContainer .grid {
     grid-template-columns: repeat(4, 1fr);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
   }
 }
 

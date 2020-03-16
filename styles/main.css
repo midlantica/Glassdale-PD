@@ -2,12 +2,43 @@
 @import "./colors.css";
 @import "./panels.css";
 @import "./grid.css";
+@import "./forms.css";
 
 :root {
   margin: 0;
   padding: 0;
   font-family: "Arvo", serif;
   --deepBlue: rgb(15, 19, 68);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+article.flexRow {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+article.flexColumn {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 header,

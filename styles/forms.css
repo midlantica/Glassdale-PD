@@ -1,0 +1,74 @@
+/* NOTES FORM + */
+.dh-Form {
+  background: white;
+  padding: 1em 1.5em;
+  border: 1px solid var(--grey-100);
+  margin-bottom: 1.5em;
+  border-radius: 3px;
+}
+
+.dh-Form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.formWrap {
+  min-width: 300px;
+  margin: 0 0.5em 1em;
+}
+
+.dh-Form h4 {
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+}
+
+.dh-Form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75em;
+  cursor: pointer;
+}
+
+.dh-Form label input {
+  height: 1.85em;
+  border-radius: 3px;
+}
+
+.dh-Form label:hover input,
+.dh-Form label:hover textarea {
+  background: rgb(255, 255, 201);
+  border-radius: 3px;
+}
+
+.dh-Form label:focus input,
+.dh-Form label:active input,
+.dh-Form label:focus textarea,
+.dh-Form label:active textarea {
+  background: rgb(255, 255, 201);
+}
+
+.dh-Form label input,
+.dh-Form label textarea {
+  border: 1px solid var(--grey-100);
+  margin-top: 0.3em;
+  padding: 0.5em 0.75em;
+  outline: none;
+  font-size: 0.85em;
+}
+
+.dh-Form label textarea {
+  border: 1px solid var(--grey-100);
+  margin-top: 0.3em;
+}
+
+.dh-Form button {
+  padding: 0.5em 0.9em 0.5em;
+  font-size: 0.9em;
+  float: right;
+  background: rgb(241, 241, 241);
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
