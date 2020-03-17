@@ -1,73 +1,18 @@
-@import "./nomalize.css";
+@import "./utilities/utilities.css";
 @import "./colors.css";
+@import "./tyography.css";
+@import "./headerFooter.css";
 @import "./panels.css";
 @import "./grid.css";
 @import "./forms.css";
+@import "./filters.css";
+@import "./crime.css";
 
 :root {
   margin: 0;
   padding: 0;
   font-family: "Arvo", serif;
   --deepBlue: rgb(15, 19, 68);
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.flexRow {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-article.flexRow {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.flexColumn {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-article.flexColumn {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-header,
-footer {
-  background: var(--deepBlue);
-  color: white;
-}
-
-header {
-  padding: 20px 20px;
-}
-
-footer {
-  padding: 10px 20px;
-}
-
-header h1 {
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-
-header h1 i {
-  margin-right: 0.3em;
-}
-
-footer h4 {
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -86,30 +31,8 @@ main {
   background: whitesmoke;
 }
 
-.filters {
-  border: 1px solid var(--grey-100);
-  padding: 1em;
-  margin-bottom: 1em;
-  background: white;
-  border-radius: 3px;
-}
-
-.filters h4 {
-  margin: 1em 0.5em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 1em 0 0.3em 0;
-  color: var(--deepBlue);
-}
-
-#crimeSelect {
-  margin: 0.3em 0 0;
-  /* padding: 1em 0em; */
-  height: 35px;
+.listsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }

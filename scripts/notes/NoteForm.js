@@ -1,6 +1,6 @@
 import { saveNote } from "./NoteDataProvider.js"
 
-const contentTarget = document.querySelector(".noteFormContainer")
+const contentTarget = document.querySelector(".ContainBox.notes")
 
 // Handle browser-generated click event in component
 contentTarget.addEventListener("click", clickEvent => {

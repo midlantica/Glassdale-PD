@@ -1,0 +1,17 @@
+.filters {
+  border: 1px solid var(--grey-100);
+  padding: 1em;
+  margin-bottom: 1em;
+  background: white;
+  border-radius: 3px;
+}
+
+.filters h4 {
+  margin: 1em 0.5em;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}

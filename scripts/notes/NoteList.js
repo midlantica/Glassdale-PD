@@ -1,7 +1,7 @@
 import { NotesHtml } from "./Note.js"
 import { useNotes } from "./NoteDataProvider.js"
 
-const contentTarget = document.querySelector(".noteFormContainer .grid")
+const contentTarget = document.querySelector(".ContainBox.notes .grid")
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("crimeChosen", event => {

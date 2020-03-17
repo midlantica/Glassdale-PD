@@ -1,7 +1,7 @@
-import { OfficerHtml } from './Officer.js'
-import { useOfficers } from './OfficerProvider.js'
+import { OfficerHtml } from "./Officer.js"
+import { useOfficers } from "./OfficerProvider.js"
 
-const contentTarget = document.querySelector('.officersContainer article')
+const contentTarget = document.querySelector(".officersContainer section")
 export const OfficerList = () => {
   const OfficerItems = useOfficers()
 
