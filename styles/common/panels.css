@@ -29,7 +29,11 @@
   margin: 0;
   line-height: 1.75;
   vertical-align: top;
-  min-width: 9em;
+  /* min-width: 9em; */
+}
+
+.panel td:first-of-type {
+  width: 40%;
 }
 
 .panel td:first-of-type {

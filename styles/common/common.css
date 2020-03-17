@@ -1,0 +1,76 @@
+@import "./normalize.css";
+@import "./flex.css";
+@import "./mortar.css";
+@import "./panels.css";
+@import "./forms.css";
+@import "./buttons.css";
+
+.w100 {
+  width: 100%;
+}
+
+.w85 {
+  width: 85%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w30 {
+  width: 30%;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w10 {
+  width: 10%;
+}
+
+.w05 {
+  width: 05%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+img,
+video,
+audio {
+  max-width: 100%;
+  height: auto;
+}

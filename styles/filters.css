@@ -4,14 +4,15 @@
   margin-bottom: 1em;
   background: white;
   border-radius: 3px;
+  /*  */
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.filters > * {
+  margin-left: 1rem;
 }
 
 .filters h4 {
   margin: 1em 0.5em;
-}
-
-.filters {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }

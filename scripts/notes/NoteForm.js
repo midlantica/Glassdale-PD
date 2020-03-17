@@ -1,6 +1,6 @@
 import { saveNote } from "./NoteDataProvider.js"
 
-const contentTarget = document.querySelector(".ContainBox.notes")
+const contentTarget = document.querySelector(".ContainBox.notes .noteForm")
 
 // Handle browser-generated click event in component
 contentTarget.addEventListener("click", clickEvent => {
@@ -22,17 +22,17 @@ contentTarget.addEventListener("click", clickEvent => {
 
 const render = () => {
   contentTarget.innerHTML = `
-    <form>
-      <label for="noteSuspect">
-        Suspect:
+    <div class="formWrap">
+      <form class="dh-Form">
+        <label for="noteSuspect">Suspect:</label>
         <input type="text" id="noteSuspect">
-      </label>
-      <label for="noteText">
-        Note:
+
+        <label for="noteText">Note:</label>
         <textarea type="text" id="noteText" rows=5></textarea>
-      </label>
-    </form>
-    <button id="saveNote">Submit Note</button>
+
+        <button id="saveNote" class="marT1">Submit Note</button>
+      </form>
+    </div>
   `
 }
 
