@@ -1,15 +1,14 @@
 let notes = []
 
-const eventHub = document.querySelector(".noteFormContainer")
+const eventHub = document.querySelector(".ContainBox .notes")
 
 const dispatchStateChangeEvent = () => {
   const noteStateChangedEvent = new CustomEvent("noteStateChanged")
 
   eventHub.dispatchEvent(noteStateChangedEvent)
 }
-export const useNotes = () => {
-  return notes.slice()
-}
+
+export const useNotes = () => notes.slice()
 
 const getNotes = () => {
   return fetch("http://localhost:8088/notes")
@@ -20,7 +19,6 @@ const getNotes = () => {
 }
 
 export const saveNote = note => {
-  // console.log("Hello!")
   return fetch("http://localhost:8088/notes", {
     method: "POST",
     headers: {

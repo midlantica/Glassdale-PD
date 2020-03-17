@@ -19,7 +19,7 @@ eventHub.addEventListener("crimeChosen", event => {
   contentTarget.innerHTML = ""
 
   // Build up innerHTML
-  for (const individual of Notes) {
+  for (const individual of notes) {
     contentTarget.innerHTML += NotesHtml(individual)
   }
 })
