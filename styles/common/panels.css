@@ -1,15 +1,13 @@
-.panel h4,
-.panel h5 {
-  margin: 0.25em 0 0.5em;
-}
-
 .panel {
   border: 1px solid var(--grey-100);
   padding: 0.75em 1em;
-  margin-bottom: 1em;
-  margin: 0.25em 0.5em;
   background: white;
   border-radius: 3px;
+}
+
+.panel h4,
+.panel h5 {
+  margin: 0.25em 0 0.5em;
 }
 
 .panel p {
@@ -31,7 +29,11 @@
   margin: 0;
   line-height: 1.75;
   vertical-align: top;
-  min-width: 9em;
+  /* min-width: 9em; */
+}
+
+.panel td:first-of-type {
+  width: 40%;
 }
 
 .panel td:first-of-type {

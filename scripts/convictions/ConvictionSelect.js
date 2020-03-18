@@ -5,7 +5,7 @@
 import { useConvictions } from "./ConvictionProvider.js"
 
 // Get a reference to the DOM element where the <select> will be rendered
-const contentTarget = document.querySelector(".filters__crime")
+const contentTarget = document.querySelector(".ContainBox .filters__crime")
 const eventHub = document.querySelector(".container")
 
 contentTarget.addEventListener("change", changeEvent => {
@@ -33,12 +33,12 @@ export const ConvictionSelect = () => {
     Look back at the example provided above.
   */
     contentTarget.innerHTML = `
-    <select class="dropdown" id="crimeSelect">
-    <option value="0">Please select a crime...</option>
-    ${convictionsCollection.map(singleConviction => {
-      return `<option>${singleConviction.name}</option>`
-    })}
-    </select>
+      <select class="dropdown" id="crimeSelect">
+        <option value="0" select>Please select a crime...</option>
+        ${convictionsCollection.map(singleConviction => {
+          return `<option>${singleConviction.name}</option>`
+        })}
+      </select>
   `
   }
 

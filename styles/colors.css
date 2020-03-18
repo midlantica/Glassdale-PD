@@ -1,15 +1,16 @@
 :root {
   /* MAIN COLORS */
-  --black:    hsl(190, 100%, 5%);
-  --white:    hsl(82, 100%, 98%);
+  --black: hsl(190, 100%, 5%);
+  --white: hsl(82, 100%, 98%);
   /*  */
-  --bean:       hsl(6, 86%, 14%);
-  --bean-dk:    hsl(5, 85%, 8%);
-  --orange:     hsl(15, 61%, 57%);
-  --peach:      hsl(35, 100%, 70%);
+  --deepBlue: rgb(15, 19, 68);
+  --bean: hsl(6, 86%, 14%);
+  --bean-dk: hsl(5, 85%, 8%);
+  --orange: hsl(15, 61%, 57%);
+  --peach: hsl(35, 100%, 70%);
   --peach-pale: hsl(35, 45%, 86%);
-  --aqua:       hsl(184, 94%, 42%);
-  --blue:       hsl(190, 100%, 13%, .5);
+  --aqua: hsl(184, 94%, 42%);
+  --blue: hsl(190, 100%, 13%, 0.5);
   /* GREYS */
   --grey-100: hsl(0, 0%, 90%);
   --grey-200: hsl(0, 0%, 75%);
@@ -18,23 +19,22 @@
   --grey-500: hsl(0, 0%, 10%);
   /* TRANSPARENTS */
   /* blacks */
-  --transBlack-100: hsla(0, 0%, 0%, 0.10);
+  --transBlack-100: hsla(0, 0%, 0%, 0.1);
   --transBlack-200: hsla(0, 0%, 0%, 0.25);
-  --transBlack-300: hsla(0, 0%, 0%, 0.50);
+  --transBlack-300: hsla(0, 0%, 0%, 0.5);
   --transBlack-400: hsla(0, 0%, 0%, 0.75);
-  --transBlack-500: hsla(0, 0%, 0%, 0.100);
+  --transBlack-500: hsla(0, 0%, 0%, 0.1);
   /* whites */
-  --transWhite-100: hsla(0, 0%, 100%, 0.10);
+  --transWhite-100: hsla(0, 0%, 100%, 0.1);
   --transWhite-200: hsla(0, 0%, 100%, 0.25);
-  --transWhite-300: hsla(0, 0%, 100%, 0.50);
+  --transWhite-300: hsla(0, 0%, 100%, 0.5);
   --transWhite-400: hsla(0, 0%, 100%, 0.75);
-  --transWhite-500: hsla(0, 0%, 100%, 1.00);
+  --transWhite-500: hsla(0, 0%, 100%, 1);
 
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
-/* 
+/*
   var(--black)
-  var(--white) 
+  var(--white)
 */
-

@@ -12,37 +12,55 @@
 </head>
 
 <body>
-
   <div class="container">
     <header>
       <h1><i class="fas fa-user-shield"></i>Glassdale PD</h1>
     </header>
+
     <main>
-      <div class="filters">
+
+      <section class="ContainBox filters flexRowWrap">
         <h4>Filters</h4>
         <div class="filters__crime"></div>
+        <div class="notes__button"></div>
+        <div class="noteForm__button"></div>
         <div class="filters__incarceration"></div>
         <div class="filters__officer"></div>
-      </div>
-      <div class="criminalsContainer">
+      </section>
+
+      <section class="ContainBox notes">
+        <h4>Notes</h4>
+        <div class="grid">
+          <div class="noteForm">
+          </div>
+        </div>
+        <div class="grid notesList"></div>
+      </section>
+
+      <section class="ContainBox criminals">
         <h4>CRIMINALS</h4>
-        <article class="grid"></article>
-      </div>
-      <div class="convictionsContainer">
+        <div class="grid"></div>
+      </section>
+
+      <section class="ContainBox convictions">
         <h4>CONVICTIONS</h4>
-        <article class="grid"></article>
-      </div>
-      <div class="officersContainer">
+        <div class="grid"></div>
+      </section>
+
+      <div class="ContainBox officers">
         <h4>OFFICERS</h4>
-        <article class="grid"></article>
+        <section class="grid"></section>
       </div>
+
+      <section class="ContainBox lists"></section>
+      </section>
 
     </main>
-  </div>
-  <footer>
-    <h5>Glassdale PD</h5>
-  </footer>
 
+    <footer>
+      <h5>Glassdale PD</h5>
+    </footer>
+  </div>
   <script type="module" src="./scripts/main.js"></script>
 </body>
 

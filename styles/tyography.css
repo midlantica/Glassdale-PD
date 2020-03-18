@@ -1,0 +1,40 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1em 0 0.75em 0;
+  color: var(--deepBlue);
+}
+
+h1:first-of-type,
+h2:first-of-type,
+h3:first-of-type,
+h4:first-of-type,
+h5:first-of-type,
+h6:first-of-type {
+  margin-top: 0em;
+}
+
+/* h1:last-of-type,
+h2:last-of-type,
+h3:last-of-type,
+h4:last-of-type,
+h5:last-of-type,
+h6:last-of-type {
+  margin-bottom: 0em;
+} */
+
+p,
+ol,
+ul,
+li {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1em 0 0.5em 0;
+}
+
+.ContainBox h4 {
+  text-transform: uppercase;
+}

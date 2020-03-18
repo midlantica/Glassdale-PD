@@ -1,0 +1,18 @@
+.filters {
+  border: 1px solid var(--grey-100);
+  padding: 1em;
+  margin-bottom: 1em;
+  background: white;
+  border-radius: 3px;
+  /*  */
+  align-items: center;
+  justify-content: center;
+}
+
+.filters > * {
+  margin-left: 1rem;
+}
+
+.filters h4 {
+  margin: 1em 0.5em;
+}

@@ -1,0 +1,51 @@
+.flexRowWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flexRowNoWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.flexColumnWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flexColumnNoWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+article.flexRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section.flexRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+article.flexColumn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+section.flexColumn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.align-items {
+  align-items: center;
+}
