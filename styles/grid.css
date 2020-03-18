@@ -12,8 +12,8 @@
   grid-gap: 1em;
 }
 
-.ContainBox .grid2 {
+/* .ContainBox .grid2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1em;
-}
+} */

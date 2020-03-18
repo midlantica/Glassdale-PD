@@ -6,10 +6,16 @@ footer {
 
 header {
   padding: 20px 20px;
+  position: fixed;
+  /* bottom: 0; */
+  width: 100%;
 }
 
 footer {
   padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 header h1 {
@@ -25,4 +31,5 @@ header h1 i {
 footer h4 {
   margin: 0;
   padding: 0;
+  color: white;
 }

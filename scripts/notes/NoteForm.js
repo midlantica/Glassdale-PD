@@ -1,6 +1,19 @@
 import { saveNote } from "./NoteDataProvider.js"
 
-const contentTarget = document.querySelector(".ContainBox.notes .noteForm")
+const contentTarget = document.querySelector(".noteForm")
+const eventHub = document.querySelector(".container")
+
+let visibility = false
+
+eventHub.addEventListener("noteFormButtonClicked", customEvent => {
+  visibility = !visibility
+
+  if (visibility) {
+    contentTarget.classList.remove("invisible")
+  } else {
+    contentTarget.classList.add("invisible")
+  }
+})
 
 // Handle browser-generated click event in component
 contentTarget.addEventListener("click", clickEvent => {
@@ -22,22 +35,20 @@ contentTarget.addEventListener("click", clickEvent => {
 
 const render = () => {
   contentTarget.innerHTML = `
-    <div class="formWrap">
-      <form class="dh-Form">
-        <label for="noteSuspect">Suspect:</label>
-        <input type="text" id="noteSuspect">
+  <div class="formWrap">
+    <form class="dh-Form">
+    <label for="noteSuspect">Suspect:</label>
+    <input type="text" id="noteSuspect">
 
-        <label for="noteText">Note:</label>
-        <textarea type="text" id="noteText" rows=5></textarea>
+    <label for="noteText">Note:</label>
+    <textarea type="text" id="noteText" rows=5></textarea>
 
-        <button id="saveNote" class="marT1">Submit Note</button>
-      </form>
-    </div>
+    <button id="saveNote" class="marT1">Submit Note</button>
+    </form>
+  </div>
   `
 }
 
-const NoteForm = () => {
+export const NoteForm = () => {
   render()
 }
-
-export default NoteForm

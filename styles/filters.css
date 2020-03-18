@@ -6,7 +6,7 @@
   border-radius: 3px;
   /*  */
   align-items: center;
-  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .filters > * {
