@@ -18,49 +18,69 @@
     </header>
 
     <main>
+      <section class="ContainBox">
+        <h4 class="toInitialCase">Welcome to Glassdale PD</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit aliquam explicabo itaque ex ducimus officiis
+          veniam quos dicta tempora nesciunt excepturi, voluptatum temporibus. Autem cupiditate similique numquam eum
+          atque alias.</p>
 
-      <section class="ContainBox filters flexRowWrap">
-        <h4>Filters</h4>
-        <div class="filters__crime"></div>
-        <div class="notes__button"></div>
-        <div class="noteForm__button"></div>
-        <div class="filters__incarceration"></div>
-        <div class="filters__officer"></div>
       </section>
 
-      <section class="ContainBox notes">
-        <h4>Notes</h4>
-        <div class="grid">
-          <div class="noteForm">
+      <div class="contentGrid">
+
+        <section class="ContainBox notes">
+          <h4>Notes</h4>
+          <div class="flexRowWrap">
+            <div class="notes__button marR1"></div>
+            <div class="noteForm__button"></div>
           </div>
-        </div>
-        <div class="grid notesList"></div>
-      </section>
+          <div class="noteForm hide"></div>
+          <div class="grid">
+          </div>
+          <div class="grid notesList"></div>
+        </section>
 
-      <section class="ContainBox criminals">
-        <h4>CRIMINALS</h4>
-        <div class="grid"></div>
-      </section>
+        <section class="ContainBox criminals">
+          <h4>CRIMINALS</h4>
+          <div class="flexRowWrap">
+            <div class="criminals__button marR1"></div>
+            <div class="filters__crime marB1"></div>
+          </div>
+          <div class="grid">
+            <div class="grid criminalsList"></div>
+          </div>
+        </section>
 
-      <section class="ContainBox convictions">
-        <h4>CONVICTIONS</h4>
-        <div class="grid"></div>
-      </section>
-
-      <div class="ContainBox officers">
-        <h4>OFFICERS</h4>
-        <section class="grid"></section>
       </div>
 
-      <section class="ContainBox lists"></section>
-      </section>
+      <div class="contentGrid">
+        <section class="ContainBox convictions">
+          <h4>CONVICTIONS</h4>
+          <div class="filters__convictions"></div>
+          <div class="grid marT1"></div>
+        </section>
+
+        <div class="ContainBox officers">
+          <h4>OFFICERS</h4>
+          <div class="filters__officer"></div>
+          <section class="grid marT1"></section>
+        </div>
+
+        <div class="ContainBox lists">
+          <h4>Lists??</h4>
+          <div class="filters__lists"></div>
+          <section class="grid marT1"></section>
+        </div>
+      </div>
 
     </main>
 
     <footer>
       <h5>Glassdale PD</h5>
     </footer>
+
   </div>
+
   <script type="module" src="./scripts/main.js"></script>
 </body>
 

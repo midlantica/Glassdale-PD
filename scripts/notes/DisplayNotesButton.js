@@ -12,5 +12,6 @@ contentTarget.addEventListener("click", clickEvent => {
 })
 
 export const DisplayNotesButton = () => {
-  contentTarget.innerHTML = "<button id='showAllNotes'>Show All Notes</button>"
+  contentTarget.innerHTML =
+    "<button id='showAllNotes' class='btnSmall marB1'>Show All Notes</button>"
 }

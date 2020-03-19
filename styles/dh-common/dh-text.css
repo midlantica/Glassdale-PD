@@ -1,0 +1,15 @@
+.toLowerC {
+  text-transform: lowercase !important;
+}
+
+.toUpperC {
+  text-transform: uppercase !important;
+}
+
+.toCapitalize {
+  text-transform: capitalize !important;
+}
+
+.toInitialCase {
+  text-transform: initial !important;
+}
