@@ -1,9 +1,25 @@
 import { CriminalHtml } from "./Criminal.js"
-// import { useCriminals } from "./CriminalProvider.js"
 import { getCriminals, useCriminals } from "./CriminalProvider.js"
 
 const contentTarget = document.querySelector(".criminalsList")
 const eventHub = document.querySelector(".container")
+
+contentTarget.addEventListener("click", clickEvent => {
+  if (clickEvent.target.id.startsWith("associates--")) {
+    // Get the id of the criminal that was clicked
+    const [junk, criminalId] = clickEvent.target.id.split("--")
+
+    // Yell at the system that a known associates button was clicked
+    const showAssociatesEvent = new CustomEvent("knownAssociatesClicked", {
+      // Make sure to tell the system exactly which criminal button was clicked
+      detail: {
+        chosenCriminal: criminalId,
+      },
+    })
+
+    eventHub.dispatchEvent(showAssociatesEvent)
+  }
+})
 
 eventHub.addEventListener("crimeChosen", event => {
   const criminals = useCriminals()

@@ -7,7 +7,7 @@ const eventHub = document.querySelector(".container")
 /*
   State variables
 */
-let visibility = false
+let visibility = true
 
 /*
   Event handlers
