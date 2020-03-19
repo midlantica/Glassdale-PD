@@ -7,7 +7,7 @@ const eventHub = document.querySelector(".container")
 /*
   State variables
 */
-let visibility = false
+let visibility = true
 
 /*
   Event handlers
@@ -20,17 +20,17 @@ eventHub.addEventListener("allNotesClicked", customEvent => {
   visibility = !visibility
 
   if (visibility) {
-    contentTarget.classList.remove("invisible")
+    contentTarget.classList.remove("hide")
   } else {
-    contentTarget.classList.add("invisible")
+    contentTarget.classList.add("hide")
   }
 })
 
 const render = () => {
   if (visibility) {
-    contentTarget.classList.remove("invisible")
+    contentTarget.classList.remove("hide")
   } else {
-    contentTarget.classList.add("invisible")
+    contentTarget.classList.add("hide")
   }
 
   getNotes().then(() => {

@@ -1,5 +1,5 @@
 @import "./colors.css";
-@import "./common/common.css";
+@import "./dh-common/dh-common.css";
 @import "./tyography.css";
 @import "./headerFooter.css";
 @import "./grid.css";
@@ -36,11 +36,13 @@ main {
 }
 
 button {
-  color: var(--white);
-  background: var(--grey-300);
+  font-weight: 100;
+  color: var(--deepBlueLt);
+  background: white;
+  border: 1px solid hsla(0, 0%, 55%, 0.25);
 }
 
 button:hover {
-  /* color: var(--white); */
-  background: var(--grey-500);
+  color: var(--white);
+  background: var(--deepBlue);
 }

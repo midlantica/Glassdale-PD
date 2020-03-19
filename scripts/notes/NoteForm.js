@@ -9,9 +9,9 @@ eventHub.addEventListener("noteFormButtonClicked", customEvent => {
   visibility = !visibility
 
   if (visibility) {
-    contentTarget.classList.remove("invisible")
+    contentTarget.classList.remove("hide")
   } else {
-    contentTarget.classList.add("invisible")
+    contentTarget.classList.add("hide")
   }
 })
 
@@ -36,14 +36,14 @@ contentTarget.addEventListener("click", clickEvent => {
 const render = () => {
   contentTarget.innerHTML = `
   <div class="formWrap">
-    <form class="dh-Form">
+    <form class="dh-Form marB1">
     <label for="noteSuspect">Suspect:</label>
     <input type="text" id="noteSuspect">
 
     <label for="noteText">Note:</label>
     <textarea type="text" id="noteText" rows=5></textarea>
 
-    <button id="saveNote" class="marT1">Submit Note</button>
+    <button id="saveNote" class="btnSmall marT1">Submit Note</button>
     </form>
   </div>
   `
