@@ -4,7 +4,7 @@
   --white: hsl(82, 100%, 98%);
   /*  */
   --deepBlue: rgb(15, 19, 68);
-  --deepBlueLt: hsla(235, 64%, 38%, 1)
+  --deepBlueLt: hsla(235, 64%, 38%, 1);
   --bean: hsl(6, 86%, 14%);
   --bean-dk: hsl(5, 85%, 8%);
   --orange: hsl(15, 61%, 57%);
@@ -34,8 +34,3 @@
 
   font-size: 0.9rem;
 }
-
-/*
-  var(--black)
-  var(--white)
-*/
