@@ -31,6 +31,5 @@
   --transWhite-300: hsla(0, 0%, 100%, 0.5);
   --transWhite-400: hsla(0, 0%, 100%, 0.75);
   --transWhite-500: hsla(0, 0%, 100%, 1);
-
-  font-size: 0.9rem;
+  --font-size: 0.9rem;
 }
