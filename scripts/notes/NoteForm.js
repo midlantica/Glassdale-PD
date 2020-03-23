@@ -36,7 +36,7 @@ contentTarget.addEventListener("click", clickEvent => {
 const render = () => {
   contentTarget.innerHTML = `
   <div class="formWrap">
-    <form class="dh-Form marB1">
+    <form class="panel dh-Form marB1">
     <label for="noteSuspect">Suspect:</label>
     <input type="text" id="noteSuspect">
 

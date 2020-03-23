@@ -8,22 +8,8 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.ContainBox {
-  border: 1px solid var(--grey-100);
-  padding: 1em 1.25em;
-  margin-bottom: 1em;
-  background: hsl(0, 0%, 97%);
-  border-radius: 3px;
-}
-
 .ContainBox .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1em;
 }
-
-/* .ContainBox .grid2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1em;
-} */

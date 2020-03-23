@@ -20,7 +20,7 @@ export const CriminalHtml = criminalObj => {
           <td>${new Date(criminalObj.incarceration.end).toLocaleDateString("en-US")}</td>
         </tr>
       </table>
-      <button id="associates--${criminalObj.id}" class="btnXSmall">Show Associates</button>
+      <button id="associates--${criminalObj.id}">See Associates</button>
     </div>
   `
 }

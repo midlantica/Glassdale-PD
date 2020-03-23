@@ -1,7 +1,7 @@
 :root {
   /* MAIN COLORS */
   --black: hsl(190, 100%, 5%);
-  --white: hsl(82, 100%, 98%);
+  --white: hsl(0, 0%, 96%);
   /*  */
   --deepBlue: rgb(15, 19, 68);
   --deepBlueLt: hsla(235, 64%, 38%, 1);

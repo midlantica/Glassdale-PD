@@ -21,11 +21,12 @@
 .dh-Form label {
   margin-bottom: 0.75em;
   cursor: pointer;
-}
-
-.dh-Form label {
+  font-weight: 400;
   font-size: 1rem;
   margin: 1rem 0 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05ch;
 }
 
 .dh-Form label:first-of-type {
