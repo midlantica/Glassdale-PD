@@ -10,7 +10,7 @@ export const NotesHtml = (noteObj, criminal) => {
         </tr>
         <tr>
           <td>Timestamp:</td>
-          <td>${noteObj.timestamp}</td></td>
+          <td>${new Date(noteObj.timestamp).toLocaleDateString()}</td></td>
         </tr>
       </table>
     </div>

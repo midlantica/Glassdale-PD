@@ -82,3 +82,22 @@ button:hover {
 .xOut:hover {
   background: rgba(0, 0, 0, 0.5);
 }
+
+.topper {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.topper button {
+  width: 100%;
+}
+
+flexItem1 {
+  /* flex-grow: 1; */
+}
+
+.flexItem2 {
+  /* width: 150px; */
+}
