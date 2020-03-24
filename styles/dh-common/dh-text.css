@@ -1,8 +1,8 @@
-.toLowerC {
+.toLowerCase {
   text-transform: lowercase !important;
 }
 
-.toUpperC {
+.toUpperCase {
   text-transform: uppercase !important;
 }
 
@@ -12,4 +12,20 @@
 
 .toInitialCase {
   text-transform: initial !important;
+}
+
+.text-initial {
+  text-align: initial !important;
+}
+
+.text-Left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
 }

@@ -1,12 +1,13 @@
 @import "./dh-normalize.css";
-@import "./dh-flexGrid.css";
+@import "./dh-flex-grid.css";
 @import "./dh-mortar.css";
 @import "./dh-panels.css";
 @import "./dh-forms.css";
 @import "./dh-buttons.css";
-@import "./dh-widthsHeights.css";
-@import "./dh-hideShow.css";
+@import "./dh-widths-heights.css";
+@import "./dh-hide-show.css";
 @import "./dh-text.css";
+@import "./dh-typography.css";
 
 img,
 video,

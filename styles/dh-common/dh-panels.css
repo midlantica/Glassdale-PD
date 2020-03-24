@@ -22,7 +22,7 @@
 .panel p {
   color: var(--grey-400);
   margin: 0;
-  line-height: 1.75;
+  line-height: 1.25;
 }
 
 .panel table {
@@ -34,7 +34,7 @@
   font-size: 0.9em;
   font-weight: 100;
   margin: 0;
-  line-height: 1.75;
+  line-height: 1.25;
   vertical-align: top;
   /* min-width: 9em; */
 }
@@ -49,4 +49,23 @@
 
 .panel button {
   font-size: 0.8rem;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.25em !important;
+}
+
+#miniModal {
+  padding: 2em 3em;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  box-shadow: 0 2px 20px -10px black;
+  width: 200px;
+}
+
+#miniModal li {
+  line-height: 1;
+}
+
+#miniModal h4 {
+  display: inline;
+  line-height: 1;
 }

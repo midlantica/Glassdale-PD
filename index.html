@@ -12,6 +12,17 @@
     href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/bda16bb3e6.js" crossorigin="anonymous"></script>
+
+  <script>
+
+    let xOut = document.getElementById("miniModal")
+
+    function closeXout() {
+      let xOut = document.getElementById("miniModal")
+      xOut.close()
+    }
+
+  </script>
 </head>
 
 <body>
@@ -21,17 +32,16 @@
     </header>
 
     <main>
-      <section class="ContainBox">
+      <section class="ContainBox marB1">
         <h4 class="toInitialCase">Welcome to Glassdale PD</h4>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit aliquam explicabo itaque ex ducimus officiis
           veniam quos dicta tempora nesciunt excepturi, voluptatum temporibus. Autem cupiditate similique numquam eum
           atque alias.</p>
-
       </section>
 
       <div class="contentGrid">
 
-        <section class="ContainBox notes">
+        <section class="ContainBox marB1 notes">
           <h4>Notes</h4>
           <div class="flexRowWrap">
             <div class="notes__button marR1"></div>
@@ -43,8 +53,8 @@
           <div class="grid notesList"></div>
         </section>
 
-        <section class="ContainBox criminals">
-          <h4>CRIMINALS</h4>
+        <section class="ContainBox marB1 criminals">
+          <h4>Criminals</h4>
           <div class="flexRowWrap">
             <div class="criminals__button marR1"></div>
             <div class="filters__crime marB1"></div>
@@ -58,19 +68,19 @@
       </div>
 
       <div class="contentGrid">
-        <section class="ContainBox convictions">
-          <h4>CONVICTIONS</h4>
+        <section class="ContainBox marB1 convictions">
+          <h4>Convictions</h4>
           <div class="filters__convictions"></div>
           <div class="grid marT1"></div>
         </section>
 
-        <div class="ContainBox officers">
-          <h4>OFFICERS</h4>
+        <div class="ContainBox marB1 officers">
+          <h4>Officers</h4>
           <div class="filters__officer"></div>
           <section class="grid marT1"></section>
         </div>
 
-        <div class="ContainBox lists">
+        <div class="ContainBox marB1 lists">
           <h4>Lists??</h4>
           <div class="filters__lists"></div>
           <section class="grid marT1"></section>

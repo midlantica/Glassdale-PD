@@ -1,10 +1,11 @@
 @import "./colors.css";
 @import "./dh-common/dh-common.css";
 @import "./tyography.css";
-@import "./headerFooter.css";
+@import "./header-footer.css";
 @import "./grid.css";
 @import "./filters.css";
 @import "./crime.css";
+@import "./notes.css";
 @import "./notes.css";
 
 :root {
@@ -35,13 +36,12 @@ body {
 
 main {
   padding: 1em;
-  padding: 6em 1em 3em;
+  padding: 5em 1em 2em;
 }
 
 .ContainBox {
   border: 1px solid var(--grey-100);
   padding: 1em 1.25em;
-  margin-bottom: 1em;
   background: hsl(0, 0%, 100%);
   border-radius: 3px;
   box-shadow: 0px 2px 10px -10px black;
@@ -62,4 +62,23 @@ button:hover {
   color: var(--white);
   background: var(--deepBlue);
   border: 1px solid transparent;
+}
+
+.xOut {
+  width: 1.8em;
+  height: 1.4em;
+  border-radius: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  float: right;
+  text-align: center;
+  position: relative;
+  padding-top: 0.4em;
+  top: -1em;
+  right: -2em;
+}
+
+.xOut:hover {
+  background: rgba(0, 0, 0, 0.5);
 }

@@ -1,7 +1,7 @@
 export const NotesHtml = noteObj => {
   return `
     <div class="panel">
-      <h5>${noteObj.criminal}</h5>
+      <h4>${noteObj.criminal}</h4>
       <table>
         <tr>
           <td>Note:</td>

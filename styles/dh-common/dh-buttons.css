@@ -8,14 +8,6 @@ button {
   font-size: unset;
 }
 
-h1:first-of-type,
-h2:first-of-type,
-h3:first-of-type,
-h4:first-of-type,
-h5:first-of-type {
-  margin-top: 0;
-}
-
 button:first-of-type,
 select:first-of-type {
   margin-top: 0;
