@@ -1,8 +1,10 @@
 import { CriminalHtml } from "./Criminal.js"
 import { getCriminals, useCriminals } from "./CriminalProvider.js"
 
-const contentTarget = document.querySelector(".criminals")
+const contentTarget = document.querySelector(".criminalsList")
 const eventHub = document.querySelector(".container")
+
+let visibility = true
 
 contentTarget.addEventListener("click", clickEvent => {
   if (clickEvent.target.id.startsWith("associates--")) {
@@ -49,17 +51,7 @@ export const CriminalList = () => {
   }
 }
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-let visibility = false
-
-/*
-  Event handlers
-// */
-// eventHub.addEventListener("CriminalStateChanged", customEvent => {
-//   render()
-// })
+// >>>>>>>>
 
 eventHub.addEventListener("allCriminalsClicked", customEvent => {
   visibility = !visibility

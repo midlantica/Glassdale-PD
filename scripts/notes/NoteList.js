@@ -2,17 +2,11 @@ import { useCriminals } from "../criminals/CriminalProvider.js"
 import { NotesHtml } from "./Note.js"
 import { getNotes, useNotes } from "./NoteDataProvider.js"
 
-const contentTarget = document.querySelector(".notes")
+const contentTarget = document.querySelector(".notesList")
 const eventHub = document.querySelector(".container")
 
-/*
-  State variables
-*/
 let visibility = true
 
-/*
-  Event handlers
-*/
 eventHub.addEventListener("noteStateChanged", customEvent => {
   render()
 })

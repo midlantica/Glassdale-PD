@@ -2,7 +2,7 @@ import { getConvictions } from "./convictions/ConvictionProvider.js"
 import { ConvictionSelect } from "./convictions/ConvictionSelect.js"
 import { CriminalList } from "./criminals/CriminalList.js"
 import { getCriminals } from "./criminals/CriminalProvider.js"
-// import { DisplayCriminalsButton } from "./criminals/DisplayCriminalsButton.js"
+import { DisplayCriminalsButton } from "./criminals/DisplayCriminalsButton.js"
 import "./criminals/KnownAssociatesDialog.js"
 import { DisplayNoteFormButton } from "./notes/DisplayNoteFormButton.js"
 import { DisplayNotesButton } from "./notes/DisplayNotesButton.js"
@@ -15,14 +15,15 @@ getCriminals()
   .then(CriminalList)
   .then(NotesList)
   .then(NoteForm)
+  .then(DisplayNotesButton)
+  .then(DisplayNoteFormButton)
 
 getConvictions().then(ConvictionSelect)
 CriminalList()
 //
-DisplayNotesButton()
-DisplayNoteFormButton()
 
 // DisplayCriminalsButton()
 
 WitnessStatementButton()
 WitnessList()
+DisplayCriminalsButton()

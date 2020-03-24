@@ -13,5 +13,5 @@ contentTarget.addEventListener("click", clickEvent => {
 
 export const WitnessStatementButton = () => {
   contentTarget.innerHTML =
-    "<button id='showStatements' class='btnSmall marB1'>Witness Statements</button>"
+    "<button id='showStatements' class='btnSmall marBH'>Witness Statements</button>"
 }
