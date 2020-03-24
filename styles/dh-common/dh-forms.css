@@ -19,18 +19,19 @@
 }
 
 .dh-Form label {
-  margin-bottom: 0.75em;
   cursor: pointer;
   font-weight: 400;
   font-size: 1rem;
-  margin: 1rem 0 0;
+  margin: 0.8rem 0 0.3em;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05ch;
 }
 
 .dh-Form label:first-of-type {
-  margin: 0rem 0 0;
+  margin-top: 0rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
 
 .dh-Form label:hover input,
@@ -73,18 +74,37 @@
   border-radius: 3px;
 }
 
+.dh-Form textarea {
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
 .dh-Form input,
 .dh-Form textarea {
   border: 1px solid var(--grey-100);
-  margin-top: 0.3em;
+  /* margin-top: 0.3em; */
   padding: 0.5em 0.75em;
   outline: none;
   font-size: 0.85em;
 }
 
+.dh-Form input:hover,
+.dh-Form textarea:hover {
+  border: 1px solid var(--grey-100);
+  background: hsla(60, 100%, 90%, 0.74);
+  cursor: pointer;
+}
+
+.dh-Form input:focus,
+.dh-Form textarea:focus {
+  border: 1px solid var(--grey-100);
+  background: hsla(60, 100%, 90%, 0.74);
+  cursor: text;
+}
+
 .dh-Form textarea {
   border: 1px solid var(--grey-100);
-  margin-top: 0.3em;
+  /* margin-top: 0.3em; */
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -109,4 +129,18 @@
 
 select option {
   text-transform: uppercase !important;
+}
+
+.dropdown {
+  height: 31px;
+  border-radius: 0px;
+  margin: 0;
+  width: 100% !important;
+  border-color: hsla(0, 0%, 55%, 0.25);
+  outline: none;
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  background: hsla(60, 100%, 90%, 0.74);
 }

@@ -1,3 +1,4 @@
+import { useCriminals } from "../criminals/CriminalProvider.js"
 import { saveNote } from "./NoteDataProvider.js"
 
 const contentTarget = document.querySelector(".noteForm")
@@ -19,12 +20,12 @@ eventHub.addEventListener("noteFormButtonClicked", customEvent => {
 contentTarget.addEventListener("click", clickEvent => {
   if (clickEvent.target.id === "saveNote") {
     const noteText = document.querySelector("#noteText").value
-    const criminalName = document.querySelector("#noteSuspect").value
+    const criminalId = document.querySelector("#criminalDropdown").value
 
     // Make a new object representation of a note
     const newNote = {
       noteText: noteText,
-      criminal: criminalName,
+      criminal: parseInt(criminalId),
       timestamp: Date.now(),
     }
 
@@ -34,18 +35,27 @@ contentTarget.addEventListener("click", clickEvent => {
 })
 
 const render = () => {
+  contentTarget.classList.add("hide")
+  const allCriminals = useCriminals()
+
   contentTarget.innerHTML = `
-  <div class="formWrap">
-    <form class="panel dh-Form marB1">
-    <label for="noteSuspect">Suspect:</label>
-    <input type="text" id="noteSuspect">
+    <div class="formWrap">
+      <form class="panel dh-Form marB1">
 
-    <label for="noteText">Note:</label>
-    <textarea type="text" id="noteText" rows=5></textarea>
+        <label for="noteSuspect">Suspect:</label>
+        <select id="criminalDropdown" class="dropdown">
+          <option value="0">Please choose a criminal...</option>
+          ${allCriminals.map(currentCriminalObject => {
+            return `<option value="${currentCriminalObject.id}">${currentCriminalObject.name}</option>`
+          })}
+        </select>
 
-    <button id="saveNote" class="btnSmall marT1">Submit Note</button>
-    </form>
-  </div>
+        <label for="noteText">Note:</label>
+        <textarea type="text" id="noteText" rows=5></textarea>
+
+        <button id="saveNote" class="btnSmall marT1">Save Note</button>
+      </form>
+    </div>
   `
 }
 

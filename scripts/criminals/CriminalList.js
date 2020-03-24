@@ -1,7 +1,7 @@
 import { CriminalHtml } from "./Criminal.js"
 import { getCriminals, useCriminals } from "./CriminalProvider.js"
 
-const contentTarget = document.querySelector(".criminalsList")
+const contentTarget = document.querySelector(".criminals")
 const eventHub = document.querySelector(".container")
 
 contentTarget.addEventListener("click", clickEvent => {

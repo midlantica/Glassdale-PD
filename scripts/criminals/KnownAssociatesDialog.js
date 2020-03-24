@@ -26,7 +26,7 @@ eventHub.addEventListener("knownAssociatesClicked", customEvent => {
 export const KnownAssociatesDialog = criminalObject => {
   contentTarget.innerHTML = `
     <dialog id="miniModal">
-      <h4 class="float-left">Associates</h4><span class="xOut" onclick="closeXout()">X</span>
+      <h3 class="float-left">Associates</h3><span class="xOut" onclick="closeXout()">x</span>
       ${criminalObject.known_associates
         .map(currentAssociate => {
           return `

@@ -32,59 +32,41 @@
     </header>
 
     <main>
-      <section class="ContainBox marB1">
-        <h4 class="toInitialCase">Welcome to Glassdale PD</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit aliquam explicabo itaque ex ducimus officiis
-          veniam quos dicta tempora nesciunt excepturi, voluptatum temporibus. Autem cupiditate similique numquam eum
-          atque alias.</p>
+      <section class="ContainBox flexRowWrap marB1">
+        <div class="w80">
+          <h3 class="marTH marB0">Welcome to Glassdale PD</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit aliquam explicabo itaque ex ducimus officiis
+            veniam quos dicta tempora nesciunt excepturi, voluptatum temporibus. Autem cupiditate similique numquam eum
+            atque alias.</p>
+        </div>
+        <div class="w20" class="marTH marB0">
+          <div class="notes__button marR1"></div>
+          <div class="criminals__button marR1"></div>
+          <div class="witness__button marR1"></div>
+        </div>
       </section>
 
       <div class="contentGrid">
 
         <section class="ContainBox marB1 notes">
           <h4>Notes</h4>
-          <div class="flexRowWrap">
-            <div class="notes__button marR1"></div>
-            <div class="noteForm__button"></div>
-          </div>
-          <div class="noteForm hide"></div>
-          <div class="grid">
-          </div>
+          <div class="noteForm__button"></div>
+          <div class="noteForm"></div>
           <div class="grid notesList"></div>
         </section>
 
         <section class="ContainBox marB1 criminals">
           <h4>Criminals</h4>
-          <div class="flexRowWrap">
-            <div class="criminals__button marR1"></div>
-            <div class="filters__crime marB1"></div>
-          </div>
-          <div class="grid">
-            <div class="grid criminalsList"></div>
-          </div>
+          <div class="filters__crime marB1"></div>
+          <div class="grid criminalsList"></div>
           <div class="knownAssociatesContainer"></div>
         </section>
 
-      </div>
-
-      <div class="contentGrid">
-        <section class="ContainBox marB1 convictions">
-          <h4>Convictions</h4>
-          <div class="filters__convictions"></div>
-          <div class="grid marT1"></div>
+        <section class="ContainBox marB1 witnessStatements">
+          <h4>Witnesses</h4>
+          <div class="grid witnessStatementsList"></div>
         </section>
 
-        <div class="ContainBox marB1 officers">
-          <h4>Officers</h4>
-          <div class="filters__officer"></div>
-          <section class="grid marT1"></section>
-        </div>
-
-        <div class="ContainBox marB1 lists">
-          <h4>Lists??</h4>
-          <div class="filters__lists"></div>
-          <section class="grid marT1"></section>
-        </div>
       </div>
 
     </main>

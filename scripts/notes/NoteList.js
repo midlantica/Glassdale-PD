@@ -1,7 +1,8 @@
+import { useCriminals } from "../criminals/CriminalProvider.js"
 import { NotesHtml } from "./Note.js"
 import { getNotes, useNotes } from "./NoteDataProvider.js"
 
-const contentTarget = document.querySelector(".notesList")
+const contentTarget = document.querySelector(".notes")
 const eventHub = document.querySelector(".container")
 
 /*
@@ -35,10 +36,16 @@ const render = () => {
 
   getNotes().then(() => {
     const allTheNotes = useNotes()
+    const allTheCriminals = useCriminals()
 
     contentTarget.innerHTML = allTheNotes
       .map(currentNoteObject => {
-        return NotesHtml(currentNoteObject)
+        // Find the criminal for the current note
+        const theFoundCriminal = allTheCriminals.find(currentCriminalObject => {
+          return currentNoteObject.criminal === currentCriminalObject.id
+        })
+
+        return NotesHtml(currentNoteObject, theFoundCriminal)
       })
       .join("")
   })

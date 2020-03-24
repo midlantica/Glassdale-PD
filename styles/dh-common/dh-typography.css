@@ -4,6 +4,7 @@ h3:first-of-type,
 h4:first-of-type,
 h5:first-of-type {
   margin-top: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 p:last-of-type,
