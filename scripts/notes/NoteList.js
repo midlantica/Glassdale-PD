@@ -3,8 +3,6 @@ import { NotesHtml } from "./Note.js"
 import { getNotes, useNotes } from "./NoteDataProvider.js"
 
 const contentTarget = document.querySelector(".notesList")
-const contentTargetBg = document.querySelector(".notesList")
-
 const eventHub = document.querySelector(".container")
 
 let visibility = true

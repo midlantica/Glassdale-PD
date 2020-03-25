@@ -51,8 +51,6 @@ export const CriminalList = () => {
   }
 }
 
-// >>>>>>>>
-
 eventHub.addEventListener("allCriminalsClicked", customEvent => {
   visibility = !visibility
 
