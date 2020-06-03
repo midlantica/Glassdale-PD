@@ -1,6 +1,6 @@
 # Glassdale-PD
 Glassdale PD - NSS JavaScript project
 
-![Glassdale PD small](glassdale-sm.png =200)
-![Glassdale PD mid](glassdale-md.png =200)
-![Glassdale PD large](glassdale-lg.png =200)
+<img src="glassdale-sm.png" alt="Glassdale PD small" width="200"/>
+<img src="glassdale-md.png" alt="Glassdale PD mid" width="200"/>
+<img src="glassdale-lg.png" alt="Glassdale PD large" width="200"/>
